@@ -6,18 +6,14 @@
 	filemode = false
 [color]
 	ui = true
-[credential]
-	helper = cache --timeout=3600
 [merge]
 	tool = vimdiff
 [mergetool]
 	keeptemporaries = false
 	keepbackups = false
-	prompt = false
 	trustexitcode = false
 [alias]
 	last = log -1 --stat
-	cp = cherry-pick
 	co = checkout
 	cl = clone
 	ci = commit

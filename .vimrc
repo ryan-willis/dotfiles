@@ -1,6 +1,7 @@
 set nobackup
 set nowritebackup
 set noswapfile
+set noundofile
 
 set number
 set tabstop=2
