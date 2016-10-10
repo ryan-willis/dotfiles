@@ -11,4 +11,5 @@ set smartindent
 set splitbelow
 set splitright
 nnoremap ; $
+vnoremap ; $
 syntax on
