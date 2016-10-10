@@ -1,10 +1,9 @@
+#!/usr/bin/env bash
 MYWD=`exec 2>/dev/null;cd -- $(dirname "$0"); unset PWD; /usr/bin/pwd || /bin/pwd || pwd`
 
 cd $MYWD
 
 files=( "vimrc" "tmux.conf" "zshrc" "gitconfig" )
-
-echo $MYWD
 
 for i in "${files[@]}"
 do
