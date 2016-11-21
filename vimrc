@@ -13,3 +13,5 @@ set splitright
 nnoremap ; $
 vnoremap ; $
 syntax on
+
+set timeoutlen=0
