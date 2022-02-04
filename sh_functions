@@ -1,0 +1,11 @@
+function dock() { eval $(docker-machine env $1) }
+
+function fw() { ssh -R 8888:localhost:$1 ryan@rw.my.to }
+
+function sslexp() {
+  echo | openssl s_client -connect $1:443 2>/dev/null | openssl x509 -noout -enddate
+}
+
+function deltag() {
+  git push origin --delete $1; git tag -d $1
+}

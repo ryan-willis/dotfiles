@@ -1,15 +1,9 @@
 export ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="kardan"
-
+ZSH_THEME="miloshadzic"
 plugins=(git)
-
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
-alias zshconfig="vi ~/.zshrc"
-
-if ! xset q 2&1> /dev/null then
-	startx
-fi
+source $HOME/.sh_exports
+source $HOME/.sh_aliases
+source $HOME/.sh_functions

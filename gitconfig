@@ -7,7 +7,7 @@
 [color]
 	ui = true
 [merge]
-	tool = vimdiff
+	tool = opendiff
 [mergetool]
 	keeptemporaries = false
 	keepbackups = false
@@ -22,6 +22,10 @@
 	unstage = reset HEAD --
 	dc = diff --cached
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+  out = "!f() { exit; }; f"
+  difff = !git --no-pager diff
+  send = !git push origin +$(git rev-parse --abbrev-ref HEAD)
+  ry = ~git push ryan +$(git rev-parse --abbrev-ref HEAD)
 [user]
 	name = Ryan Willis
-	email = icodeninja@gmail.com
+	email = code@ryanwillis.com

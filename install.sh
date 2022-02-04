@@ -3,7 +3,7 @@ MYWD=`exec 2>/dev/null;cd -- $(dirname "$0"); unset PWD; /usr/bin/pwd || /bin/pw
 
 cd $MYWD
 
-files=( "vimrc" "tmux.conf" "zshrc" "gitconfig" )
+files=( "vimrc" "tmux.conf" "zshrc" "gitconfig" "sh_aliases" "sh_exports" "sh_functions")
 
 for i in "${files[@]}"
 do

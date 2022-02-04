@@ -1,4 +1,4 @@
-# icodeninja's dotfiles
+# ryan-willis' dotfiles
 
 
 Pretty basic stuff.
